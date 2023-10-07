@@ -16,7 +16,7 @@
 ## Características y ejemplos de los siguientes lenguajes de marcas:
 - XML
   - Los documentos XML tendran sienprer una etiqueta de apertura con la forma --> < y >
-  - Las etiquetas que hayan sido habierta tendra que ser cerradoas por su etiqueta que contendran el mismo texto pero se diferenciaran porque tendran que añadirle una /, con la forma --> </ y >.
+  - Las etiquetas que hayan sido habierta tendra que ser cerradas por su etiqueta que contendran el mismo texto pero se diferenciaran porque tendran que añadirle una /, con la forma --> </ y >.
   - Un archivo XML podra estyar formado por un texto o por otros elementos 
   - EN el archivo solo podra haber un elemento raiz
   - Un atributo los atributsos tendran la forma --> <nombre="valor">
@@ -38,9 +38,12 @@
 - YAML
   - 
 ## XML: definición y características del metalenguaje
-- prologo
-- Contenido
-- atributos
+- prologo: Es un elemneto opcional, pero que contiene informacion relativa al documento. Esoso elementos son:
+  - version: indica la version de XML
+  - enconding: indica la codificacion de la escritura en el documento
+  - standalone: indica la existencia de un esquema XML en el mismo documento
+- Contenido: La informacion del contenido del archivo vendra dado por etiquetas y atributos, que en texto plano. Las etiquetas tendrna la forma<nombre> y estaran cerradas por el itra etiqueta igual pero con una barra </nombre>
+- atributos: lso atributos en XML son como informacion adicional que se da a las etiquetas, las cuales podran tener ninguna o varios atributos, y ningun atributo podra tener mas atributos. Los atributos se escribiran poniendo un simbolo= seguido del nombre, y la informacion tendra que ir entrecomillado. Los atrubutos tendran la forma de <nombre="atributo">
 - Ejemplos en XML
 ## Webgrafia
 - https://desarrolloweb.com/articulos/450.php
