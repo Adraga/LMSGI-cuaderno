@@ -10,6 +10,12 @@
 ## Características de los lenguajes de marcas
 ## Características y ejemplos de los siguientes lenguajes de marcas:
 - XML
+  - Los documentos XML tendran sienprer una etiqueta de apertura con la forma --> < y >
+  - Las etiquetas que hayan sido habierta tendra que ser cerradoas por su etiqueta que contendran el mismo texto pero se diferenciaran porque tendran que añadirle una /, con la forma --> </ y >.
+  - Un archivo XML podra estyar formado por un texto o por otros elementos 
+  - EN el archivo solo podra haber un elemento raiz
+  - Un atributo los atributsos tendran la forma --> <nombre="valor">
+  - Un elemnto podra no tener atrubutos o contar con varios de ellos 
 - HTML
 - JSON
 - YAML
