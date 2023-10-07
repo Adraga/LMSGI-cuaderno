@@ -29,11 +29,7 @@
 - Contenido
 - atributos
 - Ejemplos en XML
-## XML: definición y características del metalenguaje
-- Prologo
-- Etiquetas
-- Atributos
-- Ejemplos en XML
 ## Webgrafia
-#### https://desarrolloweb.com/articulos/450.php
-#### https://www.gmlplus.es/que-es-un-gml/
+- https://desarrolloweb.com/articulos/450.php
+- https://www.gmlplus.es/que-es-un-gml/
+- https://www.nextu.com/blog/que-es-html-rc22/
