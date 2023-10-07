@@ -20,10 +20,23 @@
   - Un archivo XML podra estyar formado por un texto o por otros elementos 
   - EN el archivo solo podra haber un elemento raiz
   - Un atributo los atributsos tendran la forma --> <nombre="valor">
-  - Un elemnto podra no tener atrubutos o contar con varios de ellos 
+  - Un elemnto podra no tener atrubutos o contar con varios de ellos
+  - Ejemplo:
 - HTML
+  - Es facil de usar y entender
+  - Es utilizado para crear paginas webs
+  - Se puede ver lso archivos tanto en movil como en ordenador
+  - Todos los elementos contaran con una etiqueta de inico, el texto y otra etiqueta de cierre
+  - Sus archuvos se puede leer en cualquier buscador
+  - Ejemplo:
 - JSON
+  - Es un lenguaje modelador de datos
+  - Se trata de un lenguaje codificado por "clave-valor"
+  - Los valores pueden ser cadenas, numeros o conjuntos boleanos
+  - Es un lenguage ligero y que no es complicarlo de trasnmitir
+  - Ejemplo:
 - YAML
+  - 
 ## XML: definición y características del metalenguaje
 - prologo
 - Contenido
@@ -33,3 +46,4 @@
 - https://desarrolloweb.com/articulos/450.php
 - https://www.gmlplus.es/que-es-un-gml/
 - https://www.nextu.com/blog/que-es-html-rc22/
+- https://desarrolloweb.com/home/json
