@@ -22,7 +22,7 @@
   - Un atributo los atributsos tendran la forma --> <nombre="valor">
   - Un elemnto podra no tener atrubutos o contar con varios de ellos
   - Ejemplo:
-![No disponible](https://www.researchgate.net/publication/228685162/figure/fig2/AS:301870175277057@1448982866513/Ejemplo-de-documento-XML.png)
+![No disponible]([https://www.researchgate.net/publication/265784578/figure/fig2/AS:392204762796040@1470520310573/Ejemplo-Archivo-XML-con-referencia-a-una-DTD.png](https://www.researchgate.net/publication/265784578/figure/fig2/AS:392204762796040@1470520310573/Ejemplo-Archivo-XML-con-referencia-a-una-DTD.png))
 - HTML
   - Es facil de usar y entender
   - Es utilizado para crear paginas webs
@@ -37,7 +37,10 @@
   - Es un lenguage ligero y que no es complicarlo de trasnmitir
   - Ejemplo:
 - YAML
-  - 
+  - Para describir los contenidos de YALM se usara o UTF-8 o UTF-16
+  - La estructura se irá denotando con espacios en blanco
+  - Tienen un lenguaje mu sencillo y de facil lectura
+  - Tiene u lenguaje que se asemeja al XML
 ## XML: definición y características del metalenguaje
 - prologo: Es un elemneto opcional, pero que contiene informacion relativa al documento. Esoso elementos son:
   - version: indica la version de XML
