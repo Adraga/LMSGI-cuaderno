@@ -22,6 +22,7 @@
   - Un atributo los atributsos tendran la forma --> <nombre="valor">
   - Un elemnto podra no tener atrubutos o contar con varios de ellos
   - Ejemplo:
+![No disponible](https://www.researchgate.net/publication/228685162/figure/fig2/AS:301870175277057@1448982866513/Ejemplo-de-documento-XML.png)
 - HTML
   - Es facil de usar y entender
   - Es utilizado para crear paginas webs
