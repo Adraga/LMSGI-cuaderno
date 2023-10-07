@@ -8,6 +8,11 @@
 - GML: Los lenguages de marcas aparecieron por la necesidad empresarial de guardar una gran cantidad de temas de multitud de temas, y seria IBM, con esa necesidad de guardar datos que acabaria creando GML, un lenguaje que le permitia solucionar ese problema, dandoles la posivilidad de poder clasificar y escribir cualquier documento. Etonces esto seria vito por ISO, los cuales en ese momento se encargaban de normalizar procesos, que cogeria esta idea y acabaria creando SMGL, es decir, su version "standart"
 - SGML: Es ub lenguaje de marcas bien trabajado, que al ser capaz de adaptarse a una gran cantidad de trabajos, a trabes de el se han realizado otros programas como STML, 
 ## Características de los lenguajes de marcas
+  - Independencia. Los lenguajes de marcas no podra depender de que su lectura solo se pueda realizar con un software o hardware especifico
+  - Almacenados en Texto Plano. Los lenguajes deveran estar formado por texto plano
+  - Flexibilidad. El lenguaje de marcas debera tener la capacidad de adaptarse a diferentes usos
+  - Compatibilidad. Las marcas y los contenidos del documento podran estar en el mismo archivo
+  - Facilidad de procesamiento. El formato que cojael documento devera permiti ua lectura sencilla y automatica
 ## Características y ejemplos de los siguientes lenguajes de marcas:
 - XML
   - Los documentos XML tendran sienprer una etiqueta de apertura con la forma --> < y >
