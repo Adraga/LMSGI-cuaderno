@@ -22,7 +22,12 @@
   - Un atributo los atributsos tendran la forma --> <nombre="valor">
   - Un elemnto podra no tener atrubutos o contar con varios de ellos
   - Ejemplo:
-![No disponible]([https://www.researchgate.net/publication/265784578/figure/fig2/AS:392204762796040@1470520310573/Ejemplo-Archivo-XML-con-referencia-a-una-DTD.png](https://www.researchgate.net/publication/265784578/figure/fig2/AS:392204762796040@1470520310573/Ejemplo-Archivo-XML-con-referencia-a-una-DTD.png))
+    ```
+    <Persona>
+      <nombre> Manolin </nombre>
+      <apellidos>Manzano Olea</apellidos>
+    </persona>
+    ```
 - HTML
   - Es facil de usar y entender
   - Es utilizado para crear paginas webs
@@ -30,12 +35,28 @@
   - Todos los elementos contaran con una etiqueta de inico, el texto y otra etiqueta de cierre
   - Sus archuvos se puede leer en cualquier buscador
   - Ejemplo:
+    ```
+    <DOCTYPE html>
+    <html lang="es-ES">
+      <head>
+      <title>Ejemplo de html</title>
+      </head>
+      <body>
+        <p>Este es el primer parafo</p>
+        <p>Este es el segundo y ultimo parrafo</p>
+      </body>
+    ```
 - JSON
   - Es un lenguaje modelador de datos
   - Se trata de un lenguaje codificado por "clave-valor"
   - Los valores pueden ser cadenas, numeros o conjuntos boleanos
   - Es un lenguage ligero y que no es complicarlo de trasnmitir
   - Ejemplo:
+    ```
+    {
+    "tipo"="class",
+    }
+    ```
 - YAML
   - Para describir los contenidos de YALM se usara o UTF-8 o UTF-16
   - La estructura se irá denotando con espacios en blanco
