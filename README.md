@@ -1,5 +1,7 @@
 # **Actividad Cuaderno UD1**
-#
+---
+## UNIDAD 1
+---
 ## Qué es un Lenguaje de marcas
 #
 #### Un lenguaje de marcas se refiere a la forma de escribir el codigo de un documento.Es una manera de definir la estructura del texto o su presentación incorporando etiquetas o marcas que contienen información adicional.
@@ -75,3 +77,33 @@
 - https://www.gmlplus.es/que-es-un-gml/
 - https://www.nextu.com/blog/que-es-html-rc22/
 - https://desarrolloweb.com/home/json
+---
+## UNIDAD 2
+---
+##Documentos XML, estructura:
+- Declaración o prólogo
+  - lañd
+  - 
+- Elementos
+- Atributos
+- Comentarios
+- Espacios de Nombres
+- Entidades
+- CDATA
+## Validación de documentos:
+1. DTD:
+2. Entidades
+3. Anotaciones
+4. Elementos
+5. Atributos
+6. XMLSchema
+7. Definición
+8. Estructura Básica
+- Elementos Locales y Globales
+- Elementos Simples
+- Elementos Complejos
+- Subelementos
+- Atributos
+- Restricciones
+- Tipos de Datos
+- Comentarios en XMLSChema
