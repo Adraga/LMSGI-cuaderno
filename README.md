@@ -82,8 +82,9 @@
 ---
 ##Documentos XML, estructura:
 - Declaración o prólogo
-  - lañd
-  - 
+  - *version*, version de la espicificacion del documento xml, el cual por defecto vienen asignado como 1.0, aunque puedes utilizar el 1.1, el cuan viene con funcionalidades añadidas
+  - *encouding*, codificacion en la que esta escrito el documento, como UFT-8
+  - *standalone*, indica s el documento contiene un DTD, si lo contiene aparecera (yes,), en caso de que no contenga umo aparecerá (no)
 - Elementos
 - Atributos
 - Comentarios
