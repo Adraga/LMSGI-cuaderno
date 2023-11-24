@@ -115,17 +115,32 @@
    <!-- Esto es un comentario -->
   ```
 - Espacios de Nombres: Un espacio de nombres o namespace, permite distinguir etiquetas que pueden ser ambiguas. Para ello, se puede usar un atributo especial llamado xmlns seguido de dos puntos y el nombre del prefijo a utilizar. Después en el valor del atributo, se establece la URI donde esta definido el DTD de dicho espacio de nombres.
-´´´
+```
 <b:books xmlns:b="http://example.com/books">
-´´´
-
-- Entidades
-- CDATA
+```
+En este ejemplo, vemos como se esta cargando el espacio de nombres para las etiquetas relacionados con los libros y que tendrá el prefijo b.
+- Entidades:Las entidades, son fragmentos de información predefinidos que nos van a permitir incluir dicha información sin necesidad de repetir dicha información o utilizar caracteres especiales. Estas entidades presentan las siguientes caracteristicas:
+  - Para utilizar una entidad se comienza con el carácter & y se termina con ;.
+  - Pueden estar definidas en el DTD o que sean externas.
+  - Se pueden clasificar en:
+    - Generales: Forma parte del documento
+      - Internas: Están definidas en el propio documentos
+      - Externas: Están definidas en un documento externo.
+    - Entidades por parámetros: permite transformarlas en un DTD.
+  - Además, XML incluye unas entidades internas predefinidas:
+  ```
+    - &lt;      	Menor que	        <
+    - &gt;	     Mayor que	        >
+    - &amp;      	Ampersand	        &
+    - &apos;	   Comilla simple   	'
+    - &quot;    	Comilla doble	        "
+  ```
+- CDATA: El elemento CDATA, es un fragmento de información que no será procesador por el analizador; sin embargo, si que se almacenará su información, a diferencia de los comentarios.
 ## Validación de documentos:
 1. DTD:
 2. Entidades
 3. Anotaciones
-4. Elementos
+4. Elementos 
 5. Atributos
 6. XMLSchema
 7. Definición
