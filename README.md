@@ -64,14 +64,6 @@
   - La estructura se irá denotando con espacios en blanco
   - Tienen un lenguaje mu sencillo y de facil lectura
   - Tiene u lenguaje que se asemeja al XML
-## XML: definición y características del metalenguaje
-- prologo: Es un elemneto opcional, pero que contiene informacion relativa al documento. Esoso elementos son:
-  - version: indica la version de XML
-  - enconding: indica la codificacion de la escritura en el documento
-  - standalone: indica la existencia de un esquema XML en el mismo documento
-- Contenido: La informacion del contenido del archivo vendra dado por etiquetas y atributos, que en texto plano. Las etiquetas tendrna la forma<nombre> y estaran cerradas por el itra etiqueta igual pero con una barra </nombre>
-- atributos: lso atributos en XML son como informacion adicional que se da a las etiquetas, las cuales podran tener ninguna o varios atributos, y ningun atributo podra tener mas atributos. Los atributos se escribiran poniendo un simbolo= seguido del nombre, y la informacion tendra que ir entrecomillado. Los atrubutos tendran la forma de <nombre="atributo">
-- Ejemplos en XML
 ## Webgrafia
 - https://desarrolloweb.com/articulos/450.php
 - https://www.gmlplus.es/que-es-un-gml/
@@ -80,15 +72,53 @@
 ---
 ## UNIDAD 2
 ---
-##Documentos XML, estructura:
+## Documentos XML, estructura:
 - Declaración o prólogo
   - *version*, version de la espicificacion del documento xml, el cual por defecto vienen asignado como 1.0, aunque puedes utilizar el 1.1, el cuan viene con funcionalidades añadidas
   - *encouding*, codificacion en la que esta escrito el documento, como UFT-8
-  - *standalone*, indica s el documento contiene un DTD, si lo contiene aparecera (yes,), en caso de que no contenga umo aparecerá (no)
-- Elementos
-- Atributos
-- Comentarios
-- Espacios de Nombres
+  - *standalone*, indica si el documento contiene un DTD, si lo contiene aparecera (yes,), en caso de que no contenga umo aparecerá (no)
+- Elementos: los documentos x,l. contienen elementos que pueden estar unos dentro de otros. Estos elementos presentean las sigiuentes caracteristicas
+  - Un elemento tiene un nombre que se diferencian entre mayúsculas y minúsculas. Además, el nombre puede empezar por _ y por un carácter.
+  - Comienza por <nombre> y acaba con </nombre>. Los cuales deben ser por pares.
+  - Debe haber un único elemento inicial llamado raíz.
+  - Dentro de un elemento, puede contener más elementos o un texto.
+  - Cuando un elemento está vacío, se pone con la siguiente notación <nombre/>
+  - Ejemplo:
+```
+<books>
+   <book>
+      <title>titulo</title>
+      <author>autor</author>
+      <year>2023</year>
+   </book>
+</books>
+```
+  #### Ademas, todos los elementos xml tienen una serie de relaciones:
+  - Un único elemento Raíz.
+  - Cada uno de los elementos descendientes de otro elemento, se les llama hijos(children).
+  - El elemento ascendente de otro elemento se le llama padre (parent).
+  - Los elementos con un padre común se les llama hermanos (sibling).
+- Atributos: Los atributos, se necuentran dentro de la etiqueta de apertura de los elementos y nos aportan informacion adicional de este. Los atributos poseen las siguientes caracteristicas.
+  - Pueden comenzar por guion bajo _ o por un carácter, además su nombre no puede contener espacios.
+  - Deben tener un valor, que puede ir entre comillas ya sean dobles o simples; pero se recomienda el uso de dobles.
+  - Pueden ser opcionales su aparición y siempre deben de estar dentro de un elemento.
+  - Siempre deben aparecer en la etiqueta de apertura de un elemento; nunca en la de cierre.
+  - Ejemplo:
+```
+<books>
+   <book isbn="123123123"><!--ISBN es un atributo -->
+   </book>
+</books>
+```
+- Comentarios: Un comentario, es una linea de codigo,que no sera leida por el documento, y que nos permite escribir explicaciones u informacion adiuicional. Tiene el siguiente formato
+  ```
+   <!-- Esto es un comentario -->
+  ```
+- Espacios de Nombres: Un espacio de nombres o namespace, permite distinguir etiquetas que pueden ser ambiguas. Para ello, se puede usar un atributo especial llamado xmlns seguido de dos puntos y el nombre del prefijo a utilizar. Después en el valor del atributo, se establece la URI donde esta definido el DTD de dicho espacio de nombres.
+´´´
+<b:books xmlns:b="http://example.com/books">
+´´´
+
 - Entidades
 - CDATA
 ## Validación de documentos:
