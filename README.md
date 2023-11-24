@@ -154,7 +154,7 @@ En este ejemplo, vemos como se esta cargando el espacio de nombres para las etiq
 ---
 ## Validación de documentos:
 ---
-### DTD
+## DTD
 #### El DTD (Document Type Definition), son unas series de reglas que nos van a poder permitir comprovar si la estructura de el documento es válido. Ejemplo
 ```
 <book isbn="123131">
@@ -173,19 +173,84 @@ Está seria la estructura del xml que vamos a comprovar.
 ]>
 ```
 Y esta seria el DTD que valida esa estructura.
-1. Entidades: El DTD, nos permite definir entidades que no esten definidas en el xml
+### Entidades: 
+#### El DTD, nos permite definir entidades que no esten definidas en el xml
   - Internas. Están dentro del propio DTD. Estas se definen de la siguiente forma:
 ```
 <!ENTITY nombreEntidad "Valor">
 ```
   - Externas. Se definen en un fichero externo. Pudiendo ser
-    - Pública: Están dentro del propio DTD. Tienen la siguiente estructura:
+    - Pública:
+``` <!ENTITY nombreEntidad PUBLIC "id_publico" "URI"> ```
+    - Privada:
+``` <!ENTITY nombreEntidad SYSTEM "URI"> ```
+### Anotaciones: 
+#### Una alotacion, es un componente que define un formato de un valor, concretamente que no se utilizaran como una entidad XML, como puede ser el caso del valor de un atributo. Se pueden definir como:
+- Anotación pública
 ```
-
+<!NOTATION nombre PUBLIC “id_publico”>
+<!NOTATION nombre PUBLIC “Id_publico” “URI”>
 ```
-    - Privada: Se definen en un fichero externo. Pudiendo ser:
-2. Anotaciones
-4. Elementos 
-5. Atributos
-### XMLSchema
-
+- Anotación privada
+```
+<!NOTATION nombre SYSTEM “URI”>
+```
+### Elementos 
+#### Paara definir elementos utilizamos la siguiente estructura
+```
+<!ELEMENT nombreElemento (contenido)>
+```
+Donde el "contenido" puede ser:
+- EMPTY: Vacío.
+- ANY: Cualquier valor.
+- (#PCDATA): Elemento de tipo carácter.
+- (NombreElemento): Elemento Hijo.
+- (NombreElemento1,NombreElemento2,...): Lista de elementos hijos.
+### Atributos
+#### Para definir atributos utilizamos la siguiente estructura:
+```
+<!ATTLIST nombreElemento nombreAtributo tipoAtributo "valorAtributo">
+```
+Donde el "tipoAtributo" puede ser:
+- CDATA: Cadena de caracteres.
+- (Valor1|Valor2): Lista de valores.
+- ID: Identificador único.
+- IDREF: Referencia a un identificador de otro elemento.
+- IDREFS: Lista de identificadores de otro elemento.
+- NMTOKEN: Nombre XML válido.
+- NMTOKENS: Lista de Nombres XML válidos.
+- ENTITY: Referencia a una entidad.
+- ENTITIES: Referencia a un conjunto de entidades.
+- NOTATION: Nombre de una anotación.
+- xml:lang: Idioma del documento.
+- xml:space: Indica si se han de respetar espacios tabulaciones y retornos de carro múltiples.
+#### Ademas, "el valorAtributo" puede ser:
+- valor: valor o lista de valores(separados por |) que puede tomar el atributo.
+- #REQUIRED: atributo obligatorio.
+- #IMPLIED: Indica que el valor es opcional.
+- #FIXED valor: indica un valor fijo
+## XMLSchema
+#### XMLSchema, es un DTD, que soluciona algunos prolemas de este. Algunas funcionalidades son:
+- Permite determinar qué elementos y atributos admite un XML.
+- Permite determinar los tipos de datos que contienen tanto elementos como atributos(Cadena, números, fecha...).
+- Permite asignar valores por defecto.
+- Permite determinar cardinalidades más precisas, orden de los elementos u opcionalidad.
+- XMLSchema esta escrito en XML a diferencia de DTD.
+#### Para enlazar un fichero XSD, tenemos en primer lugar que añadir el espacio de nombres para usar XMLSChema y establecer un esquema por defecto. Si hubiese más, se pueden establecer utilizando otros espacios de nombres.
+```<mensaje xmlns:xs="http://w3.org/2001/XMLSchema-instance"
+                xs:noNamespaceSchemaLocation="mensaje.xsd">
+```
+Como vemos en el fragmento anterior, el fichero xsd, puede estar en un fichero Local, o usando una URL externa.
+Una vez enlazado el fichero XSD, podemos definirlo usando como raiz el siguiente elemento:
+```
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+```
+Dentro del elemento xs:schema añadiremos toda la definición del esquema.
+### XSD
+#### Dentro de un XSD, puede haber los siguientes elementos:
+- Elementos:
+  - 
+- Restricciones:
+- SubElemntos:
+- Atributos:
+- Comentarios:
