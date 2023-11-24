@@ -246,11 +246,121 @@ Una vez enlazado el fichero XSD, podemos definirlo usando como raiz el siguiente
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 ```
 Dentro del elemento xs:schema añadiremos toda la definición del esquema.
+--- 
 ### XSD
-#### Dentro de un XSD, puede haber los siguientes elementos:
-- Elementos:
-  - 
-- Restricciones:
-- SubElemntos:
-- Atributos:
-- Comentarios:
+---
+### Dentro de un XSD, puede haber los siguientes elementos:
+#### Elementos: Los elementos pueden ser:
+- Locales: Hijos de los elementos que no son el elemento raíz y  sólo se usan una vez.
+- Globales: Hijos del elemento raíz y pueden ser reutilizados.
+#### Donde la estructura es la siguiente:
+```
+<xs:element name="" type="" default="" fixed="" minOccurs="0" maxOccurs="0" />
+```
+#### Cada parte nos da la siguiente informacion:
+- name: Nombre del elemento.
+- type: Tipo de dato que contiene.
+- default: Valor por defecto.
+- Fixed: Valor del atributo en caso de que exista.
+- minOccurs: número de veces mínimo que puede aparecer. Por defecto 1.
+- maxOccurs: número de veces máximo que puede aparecer. Por defecto 1.
+#### Atributos: Un atributo, puede estar dentro de un elemento simple o complejo; tiene la siguiente sintaxis:
+```
+<xs:attribute name="" type="" use="required" default="" fixed=""/>
+```
+- El atributo tiene las siguientes propiedades:
+  - name: Nombre del atributo.
+  - type: Tipo de dato.
+  - use: Indica su obligatoriedad. Tiene los siguientes valores:
+  - required: obligatorio.
+  - optional: Opcional.
+  - prohibited: No se puede utilizar el dicho elemento.
+  - default: Permite asignar un valor por defecto.
+  - fixed: Determina el valor del atributo en caso de que exista.
+#### Restricciones: Para establecer una restricción, su sintaxis es:
+```
+<xs:restriction base="xs:integer">
+</xs:restriction>
+```
+- Donde base, es el tipo de dato del que se inicia. Dentro de la restricción, se establecen facetas que establecen los tipos de valores a utilizar. Existen los siguientes:
+  - xs:length Longitud Fija
+  - xs:minLength	Longitud Mínima
+  - xs:maxLength	Longitud Máxima
+  - xs:totalDigits	Total Dígitos de un número
+  - xs:fractionDigits	Total digitos Decimales de un número
+  - xs:minExclusive	Valor mínimo que puede tomar.
+  - xs:maxEclusive	Valor máximo que puede tomar.
+  - xs:minInclusive	Valor que debe ser mayor o igual
+  - xs:maxInclusive	Valor que debe ser menor o igual
+  - xs:enumeration	Lista de posibles valores (String)
+  - xs:whiteSpace	Determina como tratar los espacios en blanco.
+  - xs:pattern	Fija un patrón de caracteres permitidos.
+#### Tipos de datos: Disponenemos de los siguientes tipos de datos:
+  - xs:string	Cadena de caracteres
+  - xs:integer	Número Entero
+  - xs:decimal	Número decimal separando por ".".
+  - xs:boolean	Valor Booleano "true" para verdadero o "false" para falso.
+  - xs:date	fecha con formato AAAA-MM-DD
+  - xs:time	Hora con formato hh:mm:ss
+  - xs:durantion	Duración de tiempo con formato "PnYMnDTnHnMns".
+#### Comentarios:Estos comentarios se utilizan como documentación del propio esquema y ayuda a quienes lo utilizan a comprenderlo. Estos comentarios NO son lo mismo que los comentarios XML que se pueden seguir utilizando de igual forma que para los propios documentos XML. Tienen la siguiente estructura:
+```
+<xs:element name="mensaje">
+        <xs:annotation>
+            <xs:appinfo>Información del mensaje</xs:appinfo>
+            <xs:documentation>Mensaje a enviar</xs:documentation>
+        </xs:annotation>
+</xs:element>
+```
+Donde podemos ver:
+
+- appInfo: Información del elemento o atributo.
+- documentation: Documentación en detalle del elemento o atributo.
+
+### Ejemplo de SCHEMA
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<books
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="books.xsd">
+    <book ref="111111A">
+        <title>Desarrollo Homebrew para 16 bits</title>
+        <author>V. Suarez Garcia</author>
+        <year>2023</year>
+    </book>
+</books>
+```
+Este es el documento que vamos a validar con SCHEMA
+```
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="book">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="author" type="xs:string"/>
+                            <xs:element name="year">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="1970"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="ref">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9]{6}[A-Z]"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+```
+Y esta es su validacion usando la estructura de SCHEMA
