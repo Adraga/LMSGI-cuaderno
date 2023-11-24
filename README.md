@@ -136,20 +136,56 @@ En este ejemplo, vemos como se esta cargando el espacio de nombres para las etiq
     - &quot;    	Comilla doble	        "
   ```
 - CDATA: El elemento CDATA, es un fragmento de información que no será procesador por el analizador; sin embargo, si que se almacenará su información, a diferencia de los comentarios.
+```
+<book>
+    <description>
+           <![CDATA[  <html>
+                                <head>
+                                </head>
+                                <body>
+                                     <h1> Encabezado</h1>
+                               </body>
+                           </html>
+           ]]>
+    </description>
+</book>
+```
+#### En el codigo anterior, se puede ver un ejemplo, donde se aprecia como sera la estructura de un CDATA, comenzando por un " <![CDATA ", dentro los los dos corchetes, estara el mensage que queremos poner " [aqui se mete el mensaje] ", y el CDATA se cerara de la siguiente manera" ]> "
+---
 ## Validación de documentos:
-1. DTD:
-2. Entidades
-3. Anotaciones
+---
+### DTD
+#### El DTD (Document Type Definition), son unas series de reglas que nos van a poder permitir comprovar si la estructura de el documento es válido. Ejemplo
+```
+<book isbn="123131">
+  <title>titulo</title>
+  <author>autor</author>
+  <year>2023</year>
+</book>
+```
+Está seria la estructura del xml que vamos a comprovar.
+```
+<!DOCTYPE book[
+     <!ATTLIST book isbn CDATA #REQUIRED>
+     <!ELEMENT title (#CDATA)>
+     <!ELEMENT author (#CDATA)>
+     <!ELEMENT year (#CDATA)>
+]>
+```
+Y esta seria el DTD que valida esa estructura.
+1. Entidades: El DTD, nos permite definir entidades que no esten definidas en el xml
+  - Internas. Están dentro del propio DTD. Estas se definen de la siguiente forma:
+```
+<!ENTITY nombreEntidad "Valor">
+```
+  - Externas. Se definen en un fichero externo. Pudiendo ser
+    - Pública: Están dentro del propio DTD. Tienen la siguiente estructura:
+```
+
+```
+    - Privada: Se definen en un fichero externo. Pudiendo ser:
+2. Anotaciones
 4. Elementos 
 5. Atributos
-6. XMLSchema
-7. Definición
-8. Estructura Básica
-- Elementos Locales y Globales
-- Elementos Simples
-- Elementos Complejos
-- Subelementos
-- Atributos
-- Restricciones
-- Tipos de Datos
-- Comentarios en XMLSChema
+### XMLSchema
+
