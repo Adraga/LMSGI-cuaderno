@@ -1,4 +1,4 @@
-# **Actividad Cuaderno UD1**
+# **Actividad Cuaderno**
 ---
 ## UNIDAD 1
 ---
@@ -363,16 +363,51 @@ Este es el documento que vamos a validar con SCHEMA
     </xs:element>
 </xs:schema>
 ```
-Y esta es su validacion usando la estructura de SCHEMA
+#### Y esta es su validacion usando la estructura de SCHEMA
 --- 
-## UD7
+## UNIDAD 7
+--- 
 --- 
 ### Sistemas de gestión de información
+--- 
 - Características
+  - Son softwares que han sido diseñados para dar soporte a a cualquiera de los procesos que se realizan en una empresa
+  - Permite mejorear los procesos y obtener mayor beneficio a las actividades de la empresa
 - Tipos
+  - ERP
+  - CRM
+  - BI
+--- 
 ### ERP
-- Características y beneficios
+--- 
+#### - Un ERP (Sistemas de planificacion de recursos empresariales), es un software que cubren diferentes procesos especificos que hay en una empresa. El ERP estan diselados para un funcionamiento general de cualquier empresa, sim embargo se pueden modificar adaptarlas de manera particular a cada empresa.
+#### - Es importante mencionar que el proceso de implantación, no solo esta orientado al mero hecho de la instalación en una empresa de un ERP; sino también la adaptación del mismo y la correspondiente formación a los profesionales que van a utlizarlo
+- Características
+  - Funcional: Un ERP debe proveeer soluciones para todos los proceso del negocio.
+  - Modular: Los módulos se deben de poder integrar de manera opcional e independiente.
+  - Centralizado: La base de datos debe ser única y los datos no han de estar replicados en múltiples fuentes.
+  - Robusto: debe incorporar mecanismos que garanticen la fiabilidad de los datos.
+  - Seguro: Tienen que incorporar mecanismos que garenticen que el acceso a la información solo se va a permitir a las personas adecuadas.
+  - Mantenible: El sistema debe poder mantenerse, mejorarse y ampliarse. Es importante a la hora de elegir un ERP mantenido por una empresa externa que sea solvente y fiable.
+  - Adaptable: los ERP son soluciones genéricas, construidas como productos lo suficientemente flexibles como para poder ser integrados en casi cualquier compañía.
+- Beneficios
+  - Optimiza los procesos de gestión
+  - Mejora la productividad
+  - Simplificación de las tecnologías de la información de la compañia
+  - Mejora en los procesos de decisión como consecuencia de la centralización de la información y del acceso a los datos en tiempo real.
+  - Reduce los costes de gestión de la información.
+  - Facilitan la escalabilidad del sistema.
+  - Permiten incrementar la seguridad de la información
 - Ejemplo ERP Más conocidos
+  - SAP
+  - NetSuite / ERP Cloud (Oracle).
+  - SAGE
+  - Microsoft Dynamics 365 (Microsoft).
+  - IFS
+  - ERPNext (libre)
+  - Odoo (Libre)
+  - Apache OfBiz (libre)
+  - WebERP (Libre)
 ### CRM
 - Características y Beneficios
 - Ejemplos CRM Más conocidos
