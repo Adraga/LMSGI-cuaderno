@@ -364,3 +364,22 @@ Este es el documento que vamos a validar con SCHEMA
 </xs:schema>
 ```
 Y esta es su validacion usando la estructura de SCHEMA
+--- 
+## UD7
+--- 
+### Sistemas de gestión de información
+- Características
+- Tipos
+### ERP
+- Características y beneficios
+- Ejemplo ERP Más conocidos
+### CRM
+- Características y Beneficios
+- Ejemplos CRM Más conocidos
+### BI
+- Definición y componentes
+  - ETL
+  - Data WareHouse
+  - OLAP
+  - Data Mining
+  - DashBoard
