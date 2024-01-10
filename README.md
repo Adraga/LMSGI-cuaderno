@@ -409,10 +409,26 @@ Este es el documento que vamos a validar con SCHEMA
   - Apache OfBiz (libre)
   - WebERP (Libre)
 ### CRM
-- Características y Beneficios
+- Características
+  - Gestión de contactos: Saber en cada momento las interacciones con los clientes.
+  - Clasificación de los clientes: Ayuda a la segmentación de los clientes para mejorar el marketing.
+  - Unificación de canales: Todos los canales de comunicación deben ser uno para el cliente.
+  - Automatización y seguimiento de flujos de trabajo: Automatizar y seguir el flujo de las acciones realizadas con el cliente.
+  - Gestión de redes sociales: Es importante saber cómo gestionar las redes sociales para una mejor interacciṕn con los clientes.
+- Beneficios
+  - Facilitan la toma de decisiones: Al unificar los datos de los clientes en un único punto, resulta más sencillo obtener la información sobre su comportamiento, necesidades, nivel de satisfacción o capacidad económica. Gracias a estar información las decisiones podrán ser más eficaces.
+  - Incrementan las oportunidades de venta: AL conocer más sobre los clientes, es más sencillo acertar al ofrecerles nuevos productos. La acción de venta se puede itnegrar en los canales de comunicación permitiendo ser mucho más selectivos a la hora de gestionar nuevas oportunidades de venta.
+  - Ayudan en el proceso de mejora continua: Los datos relativos a la satisfacción de los clientes, las incidencias recogidas o las cuestiones recibidas permiten detectar los puntos débiles de la empresa y facilitar su mejora.
 - Ejemplos CRM Más conocidos
+  - Salesforce
+  - Microsoft Dynamics 365 CRM (Microsoft)
+  - Zoho CRM
+  - SAP Customer Experience
+  - Oracle Customer Experience
 ### BI
-- Definición y componentes
+#### - BI (Business Intelligence) son las siglsa a las cuales se denotan el conjunto de tecnologias que tienen un objetivo en comun, el de ayudar en el proceso de direccion de una empresa.
+#### - BI como tal no es un Sistema de Gestion de Informacion, pero esta compuesto de una serie de sistema que ayudan a este proceso
+- Componentes
   - ETL
   - Data WareHouse
   - OLAP
