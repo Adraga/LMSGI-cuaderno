@@ -429,8 +429,8 @@ Este es el documento que vamos a validar con SCHEMA
 #### - BI (Business Intelligence) son las siglsa a las cuales se denotan el conjunto de tecnologias que tienen un objetivo en comun, el de ayudar en el proceso de direccion de una empresa.
 #### - BI como tal no es un Sistema de Gestion de Informacion, pero esta compuesto de una serie de sistema que ayudan a este proceso
 - Componentes
-  - ETL
-  - Data WareHouse
-  - OLAP
-  - Data Mining
-  - DashBoard
+  - ETL: es el proceso por el cual se obtiene información de las operaciones diarias realizadas por la empresa, se procesan y se guardan en un almacén de datos. ETL como tal no es un único proceso; sino puede ser un conjunto de procesos que ayudan a recabar información.
+  - Data WareHouse: Data Warehouse (almacén de datos) es el conjunto de datos de una compañía que permiten una correcta toma de decisiones. Este conjunto de datos, puede almacenar no solo los datos en bruto, sino también los procesados por un ETL
+  - OLAP: OLAP (Online Analytical Processing o procesamiento analítico en línea) nos facilita el acceso a los datos almacenados en el Data Warehouse para alimentar el proceso de minado de datos (Data Mining). En muchas ocasiones los datos que facilita OLAP se representan en un cubo.
+  - Data Mining: Data Mining (o Minado de datos); es un proceso que consiste en buscar patrones repetitivos en grandes volúmenes de datos; normalmente obtenidos desde los almacenes de datos (data warehouse).
+  - DashBoard: Un DashBoard o cuadro de mandos es un proceso o normalmente una aplicación que permite de forma visual, ver datos en conjunto de forma general, para poder ver de un vistazo los datos requeridos e incluso hacer algunas acciones.
