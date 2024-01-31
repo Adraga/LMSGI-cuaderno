@@ -1,6 +1,6 @@
 # **Actividad Cuaderno**
 ---
-## UNIDAD 1
+## CUADERNO UNIDAD 1
 ---
 ## Qué es un Lenguaje de marcas
 #
@@ -365,7 +365,7 @@ Este es el documento que vamos a validar con SCHEMA
 ```
 #### Y esta es su validacion usando la estructura de SCHEMA
 --- 
-## UNIDAD 7
+## CUADERNO UNIDAD 7
 --- 
 --- 
 ### Sistemas de gestión de información
@@ -431,6 +431,36 @@ Este es el documento que vamos a validar con SCHEMA
 - Componentes
   - ETL: es el proceso por el cual se obtiene información de las operaciones diarias realizadas por la empresa, se procesan y se guardan en un almacén de datos. ETL como tal no es un único proceso; sino puede ser un conjunto de procesos que ayudan a recabar información.
   - Data WareHouse: Data Warehouse (almacén de datos) es el conjunto de datos de una compañía que permiten una correcta toma de decisiones. Este conjunto de datos, puede almacenar no solo los datos en bruto, sino también los procesados por un ETL
+
   - OLAP: OLAP (Online Analytical Processing o procesamiento analítico en línea) nos facilita el acceso a los datos almacenados en el Data Warehouse para alimentar el proceso de minado de datos (Data Mining). En muchas ocasiones los datos que facilita OLAP se representan en un cubo.
   - Data Mining: Data Mining (o Minado de datos); es un proceso que consiste en buscar patrones repetitivos en grandes volúmenes de datos; normalmente obtenidos desde los almacenes de datos (data warehouse).
   - DashBoard: Un DashBoard o cuadro de mandos es un proceso o normalmente una aplicación que permite de forma visual, ver datos en conjunto de forma general, para poder ver de un vistazo los datos requeridos e incluso hacer algunas acciones.
+--- 
+CUADERNO UNIDAD 3
+--- 
+### HTML y su evolución
+#### HTML es un lenguje de marcas que fue diseñado inicialemnte ne el año 1991, como parte del CERN(Centro Europeo para la Investigación Nuclear) y desde su lanzamiento han salido varias implementaciones:
+| AÑO      | VERSION          | OBSERBACIONES           |
+|----------|------------------|-------------------------|
+| 1991     | Diseño inicial   | Inclulle 18 etiquetas   |
+| 1992     | HTML 1.1         | Cell 6   |
+| 1995     | HTML 2.0         | Cell 9   |
+| 1997     | HTML 3.2         | Cell 3   |
+| 1997     | HTML 4.0         | Cell 6   |
+| 1999     | HTML 4.1         | Cell 9   |
+### XHTML diferencias, ventajas y desventajas con respecto a HTML
+### Estructura de un documento HTML
+### Cabecera HTML
+- Title:
+- Meta:
+- Style:
+- Link:
+- Script:
+### Cuerpo HTML
+- Elementos de Bloque:
+  - Definir los diferentes elementos de bloque existentes:
+- Elementos de Línea:
+  - Definir los diferentes elementos de línea existentes:
+- Listas, tablas y Formularios:
+- Elementos Multimedia para HTML5:
+  - Herramientas de edición y desarrollo web:
