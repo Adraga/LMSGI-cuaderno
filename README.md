@@ -440,15 +440,20 @@ CUADERNO UNIDAD 3
 --- 
 ### HTML y su evolución
 #### HTML es un lenguje de marcas que fue diseñado inicialemnte ne el año 1991, como parte del CERN(Centro Europeo para la Investigación Nuclear) y desde su lanzamiento han salido varias implementaciones:
-| AÑO      | VERSION          | OBSERBACIONES           |
-|----------|------------------|-------------------------|
-| 1991     | Diseño inicial   | Inclulle 18 etiquetas   |
-| 1992     | HTML 1.1         | Cell 6   |
-| 1995     | HTML 2.0         | Cell 9   |
-| 1997     | HTML 3.2         | Cell 3   |
-| 1997     | HTML 4.0         | Cell 6   |
-| 1999     | HTML 4.1         | Cell 9   |
+| AÑO      | VERSION          | OBSERBACIONES                                   |
+|----------|------------------|-------------------------------------------------|
+| 1991     | Diseño inicial   | Inclulle 18 etiquetas.                           |
+| 1992     | HTML 1.1         | Primer Borrador.                                 |
+| 1995     | HTML 2.0         | Recomendación W3C.                               |
+| 1997     | HTML 3.2         | Recomendación W3C.                               |
+| 1997     | HTML 4.0         | Recomendación W3C.                               |
+| 1999     | HTML 4.1         | Recomendación W3C.                               |
+| 2000     | XHTML            | Publicado como recomendación del W3C. Tiene como objetivo sustituir a HTML pero se desarrolló el estándar HTML 5 por otro lado.                                                            |
+| 2014     | HTML 5.0         | Recomendación W3C.                               |
+| 2016     | HTML 5.1         | Recomendación W3C.                               |
+| 2017     | HTML 5.2         | Recomendación W3C.                               |
 ### XHTML diferencias, ventajas y desventajas con respecto a HTML
+#### El XHTML es un estandar que se extiende en HTML, con las propias carracteristicas del metalenguaje XML. Por esa razón sigue las reglas del mismo, a diferencia del HTML
 ### Estructura de un documento HTML
 ### Cabecera HTML
 - Title:
