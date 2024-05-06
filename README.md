@@ -365,11 +365,9 @@ Este es el documento que vamos a validar con SCHEMA
 ```
 #### Y esta es su validacion usando la estructura de SCHEMA
 --- 
-## CUADERNO UNIDAD 7
---- 
+# CUADERNO UNIDAD 7
 --- 
 ### Sistemas de gestión de información
---- 
 - Características
   - Son softwares que han sido diseñados para dar soporte a a cualquiera de los procesos que se realizan en una empresa
   - Permite mejorear los procesos y obtener mayor beneficio a las actividades de la empresa
@@ -377,9 +375,7 @@ Este es el documento que vamos a validar con SCHEMA
   - ERP
   - CRM
   - BI
---- 
 ### ERP
---- 
 #### - Un ERP (Sistemas de planificacion de recursos empresariales), es un software que cubren diferentes procesos especificos que hay en una empresa. El ERP estan diselados para un funcionamiento general de cualquier empresa, sim embargo se pueden modificar adaptarlas de manera particular a cada empresa.
 #### - Es importante mencionar que el proceso de implantación, no solo esta orientado al mero hecho de la instalación en una empresa de un ERP; sino también la adaptación del mismo y la correspondiente formación a los profesionales que van a utlizarlo
 - Características
@@ -436,7 +432,7 @@ Este es el documento que vamos a validar con SCHEMA
   - Data Mining: Data Mining (o Minado de datos); es un proceso que consiste en buscar patrones repetitivos en grandes volúmenes de datos; normalmente obtenidos desde los almacenes de datos (data warehouse).
   - DashBoard: Un DashBoard o cuadro de mandos es un proceso o normalmente una aplicación que permite de forma visual, ver datos en conjunto de forma general, para poder ver de un vistazo los datos requeridos e incluso hacer algunas acciones.
 --- 
-CUADERNO UNIDAD 3
+# CUADERNO UNIDAD 3
 --- 
 ### HTML y su evolución
 #### HTML es un lenguje de marcas que fue diseñado inicialemnte ne el año 1991, como parte del CERN(Centro Europeo para la Investigación Nuclear) y desde su lanzamiento han salido varias implementaciones:
@@ -453,8 +449,69 @@ CUADERNO UNIDAD 3
 | 2016     | HTML 5.1         | Recomendación W3C.                               |
 | 2017     | HTML 5.2         | Recomendación W3C.                               |
 ### XHTML diferencias, ventajas y desventajas con respecto a HTML
-#### El XHTML es un estandar que se extiende en HTML, con las propias carracteristicas del metalenguaje XML. Por esa razón sigue las reglas del mismo, a diferencia del HTML
+#### El XHTML es un estandar que se extiende en HTML, con las propias carracteristicas del metalenguaje XML. Por esa razón sigue las reglas del mismo, a diferencia del HTML.
+#### Tiene una estructura similar al HTML, pero con algunas diferencias:
+- Las etiquetas deben estar bien anidadas.
+- Todas las etiquetas deben estar cerradas.
+- Todas las etiquetas y atributos van en minúscula.
+- No puede haber texto sin estar dentro de una etiqueta.
+- Todos los atributos deben tener valor e ir entre comillas.
+- No se deben insertar elementos de bloque dentro de elementos inline.
+- Los scripts y estilos deben ir dentro de un CDATA.
 ### Estructura de un documento HTML
+#### En todos lso docuemntos HTML veremos la siguiente estructura:
+- Doctype para validar el documento.
+- Cabecera
+- Cuerpo
+- Etiquetas tanto de apertura como de cierre.
+#### Ejemplo:
+```
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset='utf-8'>
+ <meta http-equiv='X-UA-Compatible'
+content='IE=edge'>
+ <title>Page Title</title>
+ <meta name='viewport'
+content='width=device-width,
+initial-scale=1' >
+ <link rel='stylesheet' type='text/css'
+media='screen' href='main.css'>
+ <script src='main.js'></script>
+</head>
+<body>
+
+</body>
+</html>
+```
+#### Si nos fijamos, todos los documettos epezaran con la etiqueta "html". Esta etiqueta es la raiz del domumento y nos permitira añadir una seria de atributos comunes a todas las etiquetas html
+#### A continuacion una tabla con algunos atributos
+| Etiqueta        | Descripcion                                       |
+|-----------------|---------------------------------------------------|
+| class           | Identifica la clase para agrupar estilos.         |
+| contentEditable | El contenido es editable                          |
+| hidden          | No se representa en el navegador                  |
+| id              | Identificador del elemento                        |
+| lang            |lenguaje que esta escrito                          |
+| spellcheck      | el elemento debe ser analizado para la ortografía |
+| style           | asigna un estilo                                  |
+| tabindex        | Orden de selección de elementos                   |
+| title           |Información Extra                                  |
+| translate       | Determina si un elemento debe ser traducido       |
+#### 
+#### En html, tambien se pueden utulizar entidades para representar carracteres especiales. Algunos los mostrare en la siguiente tabla:
+| Entidad          | Descripcion |
+|------------------|-------------|
+| ``` &copy; ```   | ©           |
+| ``` &aacute; ``` | á           |
+| ``` &eacute; ``` | é           |
+| ``` &quot; ```   | “           |
+| ``` &euro; ```   |€            |
+| ``` &gt; ```     | >           |
+| ``` &lt; ```     |<            |
+#### En html tambien se pueden poner comentarios, estos se ponen con la siguiente estructura
+``` <!-- Esto es un comentario --> ```
 ### Cabecera HTML
 - Title:
 - Meta:
@@ -468,4 +525,4 @@ CUADERNO UNIDAD 3
   - Definir los diferentes elementos de línea existentes:
 - Listas, tablas y Formularios:
 - Elementos Multimedia para HTML5:
-  - Herramientas de edición y desarrollo web:
+### Herramientas de edición y desarrollo web:
