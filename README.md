@@ -513,11 +513,20 @@ media='screen' href='main.css'>
 #### En html tambien se pueden poner comentarios, estos se ponen con la siguiente estructura
 ``` <!-- Esto es un comentario --> ```
 ### Cabecera HTML
-- Title:
-- Meta:
-- Style:
-- Link:
-- Script:
+- Title: Indica el titulo de la página
+``` <html>
+<head>
+ <title> Mi Página </title>
+</head>
+ ```
+- Meta: Indica los datos del documento
+  - 
+
+- Style: Indica el style a utilizar
+
+- Link: Enlaza con otro documento(stiles)
+
+- Script: Añade un scrip basado en JavaScript u otros lenguajes de script
 ### Cuerpo HTML
 - Elementos de Bloque:
   - Definir los diferentes elementos de bloque existentes:
