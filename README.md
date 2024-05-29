@@ -570,11 +570,27 @@ media='screen' href='main.css'>
 ```
 ### Cuerpo HTML
 #### Dentro del cuerpo de HTML podemos encontrar dos tipos de etiquetas o elementos:
-- Elementos de Bloque:Ocupan todo el espacio de su elemento padre (contenedor) y salvo excepciones permiten contener otros elementos.
+- Elementos de Bloque: Ocupan todo el espacio de su elemento padre (contenedor) y salvo excepciones permiten contener otros elementos.
   - Encabezado: Un encabezado es un elemento de bloque que muestra el título de una sección o tema. En HTML hay disponibles hasta 7 encabezados. El primero seria "h1", y el ultimo seria "h7", estos encabezados se ponen entre "<" ">".
-  - Párrafo: Un párrafo es una de las etiquetas mas básicas, se utiliza para representar 
-- Elementos de Línea:
-  - Definir los diferentes elementos de línea existentes:
+  - Párrafo: Un párrafo es una de las etiquetas mas básicas, se utiliza para representar informacion que suele ser texto, mediante la etiqueta "<"p">"
+  - Enlaces: Permite navegar por diferentes documentos ya sean propios o externos
+    - Externos: Referencian a un recurso externo a la web o donde está alojado (servidor).
+    - Internos: Referencian a un recurso interno dentro del propio servidor
+    - Internos u externos a elementos concretos: Referencian a un elemento en concreto utilizando el carácter # y el identificador del elemento
+#### Ademas los enlaces tiene los siguientes atrubutos:
+- download: Indica que el documento va a ser descargado y no representado por el navegador
+- href: Indica la dirección del documento que está enlazado; puede ser el nombre de un fichero o una URL completa
+- hreflang:  indica el idioma del documento al que está enlazando.
+- ping: Permite realizar peticiones a otras direcciones para por ejemplo registrar la actividad del usuario.
+- rel: Determina la relación que existe con el elemento o recurso que referencia.
+- target: Indica cómo se va a cargar el documento _self (propia pestaña), _blank( nueva pestaña), _parent(carga en el padre del contexto actual) o _top( carga en el recurso más alto de la navegación)
+- type: Indica el tipo de dato usando MIME Type.
+- Elementos de Línea: Ocupan sólo el espacio que ocupa su contenido; contienen datos u otros elementos de línea.
+  - Definir los diferentes elementos de línea existentes: estas etiquetas sitver para darle formato al texto, estos elementos son los siguientes
+    - <strong>:sirve para poner el texto en negrita
+    - <i>:para cursiva
+    - <u>: para subrayar un texto
+    - <strike>: para tachar un texto, tambien puede usarse <s>
 - Listas, tablas y Formularios:
 - Elementos Multimedia para HTML5:
 ### Herramientas de edición y desarrollo web:
