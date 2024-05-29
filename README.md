@@ -557,12 +557,22 @@ media='screen' href='main.css'>
  <link href="style.css" rel="stylesheet" />
  </head>
 ```
-  - href: Indica la direccion del recurso externo
-  - rel: Indica la relacion del recurso externo con el documento. 
-- Script: Añade un scrip basado en JavaScript u otros lenguajes de script
+-   - href: Indica la direccion del recurso externo
+    - rel: Indica la relacion del recurso externo con el documento. 
+- Script: Permite añadir un Script de código ejecutable, como puede ser JavaScript. Puede contener el código o referenciar un recurso externo.
+```
+<html>
+ <head>
+ <script> alert(“hola”); </script>
+ </head>
+…
+<script src=”js/main.js” />
+```
 ### Cuerpo HTML
-- Elementos de Bloque:
-  - Definir los diferentes elementos de bloque existentes:
+#### Dentro del cuerpo de HTML podemos encontrar dos tipos de etiquetas o elementos:
+- Elementos de Bloque:Ocupan todo el espacio de su elemento padre (contenedor) y salvo excepciones permiten contener otros elementos.
+  - Encabezado: Un encabezado es un elemento de bloque que muestra el título de una sección o tema. En HTML hay disponibles hasta 7 encabezados. El primero seria "h1", y el ultimo seria "h7", estos encabezados se ponen entre "<" ">".
+  - Párrafo: Un párrafo es una de las etiquetas mas básicas, se utiliza para representar 
 - Elementos de Línea:
   - Definir los diferentes elementos de línea existentes:
 - Listas, tablas y Formularios:
