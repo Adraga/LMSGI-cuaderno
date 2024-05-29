@@ -519,13 +519,46 @@ media='screen' href='main.css'>
  <title> Mi Página </title>
 </head>
  ```
-- Meta: Indica los datos del documento
-  - 
+- Meta:Nos aportan informacion sobre la página web, podemos separarla en varias partes
+  - Meta I: Indican metadatos de la propia página web. Permite informar al navegador cómo representar los datos de este. Podemos encontrar los siguientes atributos
+#### 
+| Entidad           | Descripcion                                                                       |
+|-------------------|-----------------------------------------------------------------------------------|
+|charset            | Codificación del juego de caracteres. Por ejemplo UTF-8.                          |
+| http-equiv        |Especifica una directiva. Lo veremos en la siguiente diapositiva.                  |
+| name              |Nombre del metadato.                                                               |
+|content            |valor asociado a atributos como name y http-equiv; depende del nombre del atributo.|
+- 
+  - META II:Veamos los valores que puede tener http-equiv:
+    - Content-Type: indica el tipo de contenido, y el juego de caracteres; se basa en utilizar los tipos MIME y la codificación de caracteres.
+    - cache-control: Especifica cómo ha de gestionar el navegador la caché de la web. Todos los navegadores guardan una caché para evitar realizar muchas llamadas a un servidor.
+    - refresh: Indica al navegador que pasado un tiempo ha de refrescar la página.
+    - robots: Indica a los motores de búsqueda (Como google) donde se encuentra el fichero robots.txt o que páginas no deben ser indexadas.
+    - keywords: Indica a los motores de búsqueda las palabras clave de dicha página; muy útiles para mejorar posicionamiento o SEO.
+  - Meta III: Veamos los valores que puede tener http-equiv
+    - author: Indica el autor de la página
+    - copyright: Indica el propietario de los derechos de la web.
+    - ViewPort: Indica el ancho de la zona a representar de la página. Esto es útil para que las páginas sean responsivas (que se adapten a PC o movil/tablet).
 
-- Style: Indica el style a utilizar
-
-- Link: Enlaza con otro documento(stiles)
-
+- Style: Indica el style a utilizar, podemos establecer un estilo mediante el lenguaje de marcado CSS
+  - Ejemplo:
+```
+<html>
+ <head>
+ <style>
+ p{ font-size: 5em; }
+ </style>
+ </head>
+``` 
+- Link: <esta etiqueta nos permite relacionar un elemento con otro externo
+```
+<html>
+ <head>
+ <link href="style.css" rel="stylesheet" />
+ </head>
+```
+  - href: Indica la direccion del recurso externo
+  - rel: Indica la relacion del recurso externo con el documento. 
 - Script: Añade un scrip basado en JavaScript u otros lenguajes de script
 ### Cuerpo HTML
 - Elementos de Bloque:
