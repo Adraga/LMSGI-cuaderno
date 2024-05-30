@@ -586,11 +586,89 @@ media='screen' href='main.css'>
 - target: Indica cómo se va a cargar el documento _self (propia pestaña), _blank( nueva pestaña), _parent(carga en el padre del contexto actual) o _top( carga en el recurso más alto de la navegación)
 - type: Indica el tipo de dato usando MIME Type.
 - Elementos de Línea: Ocupan sólo el espacio que ocupa su contenido; contienen datos u otros elementos de línea.
-  - Definir los diferentes elementos de línea existentes: estas etiquetas sitver para darle formato al texto, estos elementos son los siguientes
-    - <strong>:sirve para poner el texto en negrita
-    - <i>:para cursiva
-    - <u>: para subrayar un texto
-    - <strike>: para tachar un texto, tambien puede usarse <s>
+  - Definir los diferentes elementos de línea existentes: estas etiquetas siver para darle formato al texto, estos elementos son los siguientes
+```html
+   <strong>:sirve para poner el texto en negrita
+   
+1.- <i>:para cursiva
+   
+2.- <u>: para subrayar un texto
+   
+3.- <strike>: para tachar un texto, tambien puede usarse <s>
+   
+4.- <abbr>: permite indicar que un texto es una abreviatura o un acrónimo, junto al atributo title permite indicar el significado
+    del mismo al situar el cursor por encima. El formato seria el siguiente
+    <abbr title=”Hypertext Markup Language”>HTML</abbr>
+
+5.- <bdi> y <bdo>: permite establecer la dirección del texto, o anular el mismo, esto permitirá establecer el valor de la dirección
+    del texto utilizando  el atributo "dir". Por ejemplo:
+    <h1>World wrestling championships</h1>
+      <ul>
+       <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+       <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+       <li><span class="name"> سما>/span>: 3rd place</li>
+       <li><bdi class="name"> إيان القوي الرجل>/bdi>: 4th place</li>
+       <li><span class="name" dir="auto"> سما>/span>: 5th place</li>
+    </ul>
+
+6.- <cite>: Permite mostrar una referencia a un autor o una cita, el texto normalmente se mostrara en cursiva. Por ejemplo:
+    <p>Napoleón Dijo: <cite>Los sabios son los que buscan la sabiduria; los necios piensan ya haberlz encontrado.</cite></p>
+
+7.- <Code>: Permite mostrar un código fuente en otro lenguaje de programacion, como java, pyton, etc... Por ejemplo:
+    <p>Hola Mundo en C
+      <code>
+       #include<stdio.h>
+      int main(){
+      printf(“Hola Mundo”);
+      return 0;
+      }
+    </code>
+
+8.- <data>: Nos permite asignar valores distintos a los elemtos, para que los pueda procesar la máquina. Por ejemplo:
+    <data value=”10500300”>10500300</data>
+
+9.- <del>: Nos permite establecer una trazabilidad a un elemento, es decir, el elemento es tachado y contiene información de 
+    por qué ha sido tachado, esta etiqueta tiene los siguientes atributos:
+    - cite: contiene la URL con la explicacion del cambio.
+    - datatime: contiene la fecha o la hora del cambio
+
+    Por ejemplo:
+    <p> El lenguaje de programación más utilizado es <del
+    datetime=”2020-03-04 0:00:00” cite=”lenguajes.html”>Java</del>Python</p>
+
+10.- <dfn>: Permite definir un término o definición. Representa el término en letra cursiva. Por ejemplo:
+    <p><dfn>Los lenguajes de marcas</dfn> permiten almacenar
+    información junto a su contexto a través del uso de
+    etiquetas.</p>
+
+11.- <ins>: Nos permite identificar elementos que se han añadido al documento, mostrando la información de trazabilidad.
+    Tiene los mismmo atributos que "del"
+    - cite: contiene la URL con la explicación del cambio.
+    - datetime: contiene la fecha o la hora del cambio.
+    Por ejemplo:
+    <p>Los lenguajes de programación más demandados son: java, python, c# y <ins>Kotlin</ins></p>
+
+12.- <kbd>: Nosd idica un atajo del teclado o combinación de teclas, esto mejora la usabilidad de la web. Por ejemplo:
+    <p> Para arrancar el servidor podemos usar
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> y pulsar la opción <em>Live Server: Open With Live Server</em></p>
+
+12+1.- <mark>: Nos permite resaltae un texto con el color amarrillo(se puede cambiar el color con css). Por ejemplo:
+    <p>Es importante a la hora de trabajar con HTML saber
+    <mark>utilizar las herramientas disponibles<mark></p>
+
+14.- <q>: Nos permite presentar una cita literal que puede ir acompañado del atributo cite, que permite establecer de
+     donde se ha optenido esa cita. Por ejemplo:
+    <p>Como se indica en wikipedia <q
+    cite=”https://wikipedia.es/”>XML es un metalenguaje de
+    marcas</q></p>
+
+15.- <samp>: Nos permite indicar que el texto delimitado por la etiqueta es un mensaje proporcionado por un ordenador
+    y ademas diferencia el texto por otra fuente monoespaciada. Por ejemplo:
+    <p><samp>Presione F5 para continuar </samp></p>
+
+16.- <slot> y <small>: slot permite definir componetes reutilizables, de forma quee se puedan usar posteriormente.
+    
+```
 - Listas, tablas y Formularios:
 - Elementos Multimedia para HTML5:
 ### Herramientas de edición y desarrollo web:
