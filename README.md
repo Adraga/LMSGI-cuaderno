@@ -585,8 +585,47 @@ media='screen' href='main.css'>
 - rel: Determina la relación que existe con el elemento o recurso que referencia.
 - target: Indica cómo se va a cargar el documento _self (propia pestaña), _blank( nueva pestaña), _parent(carga en el padre del contexto actual) o _top( carga en el recurso más alto de la navegación)
 - type: Indica el tipo de dato usando MIME Type.
+- Ademas están los siguientes elementos de bloque:
+```html
+1.- <header>: Indica la cabecera de la web, suele almacenar el encabezado de una sección o de la web. Ademas se suele añadir
+    un logo y un título(encabezado) de la web. Por ejemplo:
+    <header>
+       <div class="container">
+         <p><img src="images/logo.png" alt="Logo Centro Deportivo Aguadulce"></p>
+         <h1>Centro Deportivo Aguadulce </h1>
+       </div>
+    </header>
+2.- <nav> Sirve para contener enlaces de navegacion, estos ennlaces pueden ser unternos o externos. Suele encontrarse despues
+    del <header>. Normalmente se incluye una lista con los enlaces. Por ejemplo:
+    <nav>
+     <div class="enlaces">
+       <a href="#inicio">Inicio</a>
+       <a href="#actividades">Actividades</a>
+       <a href="#galeria">Galeria</a>
+       <a href="#contacto">Contacto</a>
+     </div>
+    </nav>
+3.- <main>: Delimita el espacio del contenido principal, dentro puede haber distintas secciones y artículos.
+    Es importante que haya una única estiqueta main para demilitar este espacio, y que esté bien estructurado, con distintas
+    secciones. Dentro de esta etiqueta podemos encontrar las etiquetas <section> y <article>
+
+4.- <aside>: Permite definir un contenido auxiliar dentro del contenido principal de tal forma que se un contenido fijo que
+    muestre o un menú o información de interés general de la página.
+
+5.- <section>: Delimita las diferentes secciones de una página, sobretodo se utiliza para separar y dar significado semantico
+    a la web. Por ejemplo:
+    <section id="inicio">
+       <div class="container">
+         <img src="images/centrodeportivo.jpg" alt="Centro Deportivo">
+         <p>Practicar deporte es esencial para mantener un estilo de vida saludable, beneficiando el corazón, la mente y el
+            cuerpo. Nuestro centro ofrece instalaciones de vanguardia que incluyen gimnasios bien equipados, canchas modernas
+            y piscinas exteriores e interiores. ¡Únete a nosotros y vive el deporte!</p>
+       </div>
+    </section>
+```
+
 - Elementos de Línea: Ocupan sólo el espacio que ocupa su contenido; contienen datos u otros elementos de línea.
-  - Definir los diferentes elementos de línea existentes: estas etiquetas siver para darle formato al texto, estos elementos son los siguientes
+  - Definir los diferentes elementos de línea existentes: estas etiquetas sirven para darle formato al texto, estos elementos son los siguientes:
 ```html
    <strong>:sirve para poner el texto en negrita
    
@@ -667,7 +706,28 @@ media='screen' href='main.css'>
     <p><samp>Presione F5 para continuar </samp></p>
 
 16.- <slot> y <small>: slot permite definir componetes reutilizables, de forma quee se puedan usar posteriormente.
-    
+    small nos permite que un texto tenga una fuente más pequeña. Por ejemplo:
+    <p>Hola <small>que tal </small></p>
+
+17.- <span>: Nos delimita un fragmento de texto para poder posteriormente establecer un formato personalizado de CSS.
+    Por ejemplo:
+    <p>Hola <span class="miclase">que tal </span></p>
+
+18.- <sub> y <sup>: La etiqueta sub y sup permiten establecer un superindice y subindice, por lo que se pueden usar
+    para definir expresiones matemáticas. Por ejmplo:
+    <p>0=ax<sup>2</sup>+bx+c</p>
+
+19.- <template> y <time>: Template se usa para crear fragmentos de documento a través del uso de javascrip.
+    Time permite establecer de forma semántica un tiempo. Rsta etiqueta tiene el atreibuto datatime, que contiene
+    información de la hora o la fecha para que lo lea una máquina. Por ejemplo:
+    <p> La fecha de finalización es el <time
+    datetime=”2024-06-22”>22 de Junio de 2024</time></p>
+
+20.- <var> y <wbr>: La etiqueta var, permite establecer dicho contenido como una variable de ordenador por lo que
+    como cursiva(u otro formato usando CSS). Por ejemplo:
+    <p> La variable <var>edad</var> contiene la edad como entero</p>
+
+    Por otro lado, la etiqueta <wbr>, idica que el texto tenga un salto de linea si éste sobrepasa el espacio asignado.
 ```
 - Listas, tablas y Formularios:
 - Elementos Multimedia para HTML5:
